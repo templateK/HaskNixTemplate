@@ -3,20 +3,18 @@
 let
   pkgs = import <nixpkgs> {};
 
-  hspkgs = 
-    if withHoogle then
-      pkgs.haskellPackages.override {
-        overrides = new: old: {
-          ghc = old.ghc // { withPackages = old.ghc.withHoogle; };
+  hspkgs = pkgs.haskellPackages.override {
+    overrides = new: old: {
 
-          # package overrides goes here
-          #
-          # end of package overrides
+      # package overrides goes here
+      #
+      # end of package overrides
 
-        };
-      }
-    else
-      pkgs.haskellPackages;
+      ghc = if withHoogle
+              then old.ghc // { withPackages = old.ghc.withHoogle; }
+              else old.ghc;
+    };
+  };
       
   drv = hspkgs.callPackage (import ./default.nix) {
 
