@@ -4,11 +4,11 @@ synopsis:            A template project for haskell environment in NixOS.
                      It supports local hoogle search.
                      This project tested with NixOS-18.03 / GHC-8.2.2
 
-homepage:            https://github.com/frostyrock/HaskNixTemplate
+homepage:            https://github.com/templateK/HaskNixTemplate
 license:             BSD3
 license-file:        LICENSE
-author:              frostyrock
-maintainer:          frostyrock@github.com
+author:              templateK
+maintainer:          templateK@github.com
 
 category:            Development
 build-type:          Simple
