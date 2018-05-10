@@ -1,0 +1,24 @@
+name:                HaskNixTemplate
+version:             0.0.0.1
+synopsis:            A template project for haskell environment in NixOS.
+                     It supports local hoogle search.
+                     This project tested with NixOS-18.03 / GHC-8.2.2
+
+homepage:            https://github.com/frostyrock/HaskNixTemplate
+license:             BSD3
+license-file:        LICENSE
+author:              frostyrock
+maintainer:          frostyrock@github.com
+
+category:            Development
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.18
+
+executable HaskNixTemplate
+  main-is:             Main.hs
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  build-depends:       base < 5
+                     , vector
+             
