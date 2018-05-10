@@ -3,8 +3,8 @@ Haskell template project based on Nix
 
 # Usage
 
-1) if your machine doesn't have nix package manager, go to nixos site
-and install nix package manager. it supports linux / macoas
+1) if your machine doesn't have nix package manager,
+go to nixos site and install it.
 
 2) git clone  https://github.com/templateK/HaskNixTemplate.git
 
